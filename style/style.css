@@ -1,0 +1,217 @@
+/* nunito-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/nunito-sans-v15-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-sans-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/nunito-sans-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/nunito-sans-v15-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.white {
+  --primary: rgba(255, 255, 255, 1);
+  /* --second: rgba(255, 255, 255, 0.31); */
+  --title: rgba(17, 21, 23, 1);
+}
+.dark {
+  --primary: rgba(43, 56, 68, 1);
+  --second: rgba(32, 44, 54, 1);
+  --title: rgba(255, 255, 255, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* Header style */
+
+.header {
+  background-color: var(--primary);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  background-color: var(--primary);
+  padding-top: 2.3rem;
+  padding-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.sitenav-link {
+  margin-right: auto;
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 3.274rem;
+  color: var(--title);
+}
+
+.sitenav {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.sitenav-text {
+  color: var(--title);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.182rem;
+}
+
+/* .search-image {
+} */
+
+/* Main start */
+
+.main {
+  background-color: var(--second);
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-list {
+  width: 320px;
+  background-color: var(--primary);
+  color: var(--title);
+  padding-left: 24px;
+  border-radius: 5px;
+  border: 1px solid var(--second);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+.search-container {
+  display: flex;
+  width: 100%;
+  max-width: 480px;
+  height: 56px;
+  background-color: var(--primary);
+  align-items: center;
+  border: 2px solid var(--second);
+  border-color: var(--second);
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  padding-left: 24px;
+}
+
+.search-description {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--title);
+  margin-left: 2.4rem;
+}
+
+.services {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+
+.services-container-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-container {
+  width: 26.4rem;
+  height: 33.6rem;
+  margin-bottom: 7.6rem;
+  background-color: var(--second);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+.services-image {
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.services-content {
+  background-color: var(--primary);
+}
+.services-text {
+  padding-top: 2.4rem;
+
+  padding-left: 2.4rem;
+  color: var(--title);
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.services-content-description {
+  margin: 1.6rem 9.1rem 4.6rem 2.4rem;
+  padding-bottom: 4.6rem;
+}
+.services-description {
+  color: var(--title);
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
